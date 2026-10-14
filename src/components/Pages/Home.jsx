@@ -8,7 +8,6 @@ import VerticalScrollProgress from "../UiComponents/VerticalScrollProgress";
 import SphereScene from "../SphereScene";
 import LazyScene from "../LazyScene";
 import Navbar from "../UiComponents/Navbar";
-import Team from "./Home/Team";
 import Footer from "./Home/Footer";
 import Crosshair from "../UiComponents/Crosshair";
 import { useGSAP } from "@gsap/react";
@@ -109,9 +108,6 @@ const Home = ({ navigationOverlayRef }) => {
         <Brands />
       </section>
       
-      <section id="team">
-        <Team />
-      </section>
 
       <Footer />
     </div>
