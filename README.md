@@ -40,6 +40,3 @@ Create a production build:
 npm run build
 ```
 
-## Project note
-
-This repository presents one interactive 3D web experience. The original scene and scroll-driven page structure are retained; client-specific names, contact details and assets have been removed.
