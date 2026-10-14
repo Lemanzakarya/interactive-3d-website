@@ -252,10 +252,10 @@ export default function Services() {
     <section id="services" ref={rootRef} className="w-full py-16 md:py-24 relative z-30">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-6">
        <div className="relative text-center w-full referance-title">
-                   <ScrambleText textSize="5xl" text="DENEYİMİN KATMANLARI" />
+                   <ScrambleText textSize="5xl" text="TEKNİK YAPI" />
                  </div>
         <p className="text-[15px] text-center mt-4 mb-6 leading-relaxed text-white/80 max-w-2xl mx-auto px-2 md:px-0">
-          Bu bölüm, 3D deneyimi oluşturan görsel ve teknik fikirleri özetler.
+          Bu sahnenin tarayıcıda çalışmasını sağlayan temel parçalar.
         </p>
         {/* Auto-fit grid: mobil 1, md 2, lg 3 sütun */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
