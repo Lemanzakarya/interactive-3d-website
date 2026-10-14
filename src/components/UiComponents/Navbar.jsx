@@ -22,7 +22,7 @@ const Navbar = ({ navigationOverlayRef }) => {
   // Navigation section mapping
   const sectionMap = {
     'sahne': 'stackcards',
-    'etkileşim': 'services', 
+    'keşfet': 'services', 
     'yaklaşım': 'details',
     'canlı sahne': 'launchlab'
   }
@@ -222,10 +222,10 @@ const Navbar = ({ navigationOverlayRef }) => {
           </button>
           <button
             className="hidden lg:inline-block uppercase text-xs font-medium whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'etkileşim')}
+            onClick={(e) => handleNavigation(e, 'keşfet')}
             style={{ mixBlendMode: "exclusion" }}
           >
-            Etkileşim
+            Keşfet
           </button>
         </div>
 
