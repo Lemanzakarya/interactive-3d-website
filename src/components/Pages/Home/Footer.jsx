@@ -7,7 +7,7 @@ const Footer = () => {
     { name: "Renk varyasyonları", href: "#references" },
     { name: "Yaklaşım", href: "#details" },
     { name: "Teknik yapı", href: "#team" },
-    { name: "3D Sahne", href: "#launchlab" },
+    { name: "Canlı sahne", href: "#launchlab" },
   ];
   const concepts = ["React Three Fiber", "GSAP ScrollTrigger", "Lenis", "Vite"];
 
@@ -33,14 +33,14 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">Deneyim</h3>
+            <h3 className="text-white font-semibold mb-4 text-lg">Teknoloji</h3>
             <ul className="space-y-3 text-sm text-white/60">
               {concepts.map((concept) => <li key={concept}>{concept}</li>)}
             </ul>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-white/10">
-          <span className="text-white/50 text-sm">© {currentYear} — INTERACTIVE 3D EXPERIENCE</span>
+          <span className="text-white/50 text-sm">© {currentYear} — FORM / FIELD</span>
           <span className="text-white/50 text-xs text-center">SCROLL-DRIVEN WEBGL STUDY</span>
         </div>
       </div>
