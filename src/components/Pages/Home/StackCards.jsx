@@ -67,10 +67,10 @@ const StackCards = () => {
   <p className="text-[3.5vw] sm:text-sm w-full lg:w-[25%] content max-w-sm lg:max-w-none lg:order-2 order-2 mb-6 lg:mb-0 z-30">
          Kaydırdıkça sahnenin farklı anları üst üste açılır. Her kart, deneyimin içinden bir görünümü yakalar.
         </p>
-  <div className="w-[90%] lg:w-[35%] [text-shadow:0_0_5px_#60a5fa,0_0_10px_#60a5fa] relative content lg:order-1 order-1">
+  <div className="w-[90%] lg:w-[28%] [text-shadow:0_0_5px_#60a5fa,0_0_10px_#60a5fa] relative content lg:order-1 order-1">
           <ScrambleText 
-            vwText="text-[6vw] sm:text-[4.5vw] lg:text-[2.5vw]" 
-            text="SAHNEDEN KARELER"
+            vwText="text-[5vw] sm:text-[3vw] lg:text-[2vw]" 
+            text="SAHNEDEN ANLAR"
           />
         </div>
       </div>
