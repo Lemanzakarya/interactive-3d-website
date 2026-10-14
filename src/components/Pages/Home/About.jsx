@@ -58,33 +58,33 @@ const About = () => {
           <div className="relative [text-shadow:0_0_5px_#60a5fa,0_0_10px_#60a5fa] text-center w-full">
             <ScrambleText
               textSize={isMobile ? "3xl" : "4xl"}
-              text="BU DENEYİM NEDİR?"
+              text="SAHNEYE YAKINDAN BAKIN"
             />
           </div>
 
           <h3 className="text-sm font-bold telegraf text-black">
-            KAYDIRMA İLE DEĞİŞEN SAHNE.
+            KENDİ TEMPOYUNUZDA İLERLEYİN.
           </h3>
           <p className="text-sm font-light w-full md:w-[65%] text-black">
-            Bu çalışma, kaydırmayı yalnızca sayfada ilerlemek için değil, 3D sahneyi yönlendirmek için kullanır. Her geçiş, sahnenin bir sonraki hâlini ortaya çıkarır.
+            Aşağı doğru ilerledikçe sahne de sizinle birlikte dönüşür. Dilediğiniz yerde durabilir, değişimi izleyip hazır olduğunuzda devam edebilirsiniz.
           </p>
         </div>
 
         <div className="flex flex-col">
           <h3 className="text-sm font-bold telegraf text-black">
-            ETKİLEŞİM
+            SAHNEDEKİ DEĞİŞİM
           </h3>
           <p className="text-sm font-light w-full md:w-[90%] text-black">
-            ScrollTrigger, sayfa konumunu animasyon zaman çizgisine bağlar. Böylece hareket, kullanıcının ilerleyişiyle eş zamanlı akar.
+            Biçimler ve parçacıklar, sayfa boyunca birbirini takip eden farklı görünümlere dönüşür.
           </p>
         </div>
 
         <div className="flex flex-col">
           <h3 className="text-sm font-bold telegraf text-black">
-            HAREKET
+            DETAYLARI KEŞFEDİN
           </h3>
           <p className="text-sm font-light w-full md:w-[90%] text-black">
-            Three.js ve React Three Fiber ile üretilen geometri, ışık ve parçacıklar tarayıcıda gerçek zamanlı çizilir.
+            Her bölümde yeni bir renk, biçim ve hareketle karşılaşırsınız. Sahneyi kendi ritminizde keşfedin.
           </p>
         </div>
       </div>
