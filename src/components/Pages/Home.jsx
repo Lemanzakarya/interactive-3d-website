@@ -81,7 +81,7 @@ const Home = ({ navigationOverlayRef }) => {
       {/* Vertical progress indicator */}
       <VerticalScrollProgress 
         sectionIds={["landing","details","launchlab","stackcards","brands"]}
-        toolTipNames={["Intro","Approach","3D Scene","Studies","Layers"]}
+        toolTipNames={["Giriş","Yaklaşım","3D Sahne","Sahne Parçaları","Teknik Yapı"]}
         position="bottom-left"
         tooltipSide="right"
         barHeight="18vh"
