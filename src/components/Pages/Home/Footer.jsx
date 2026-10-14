@@ -4,7 +4,6 @@ import ScrambleText from "../../UiComponents/ScrambleText";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const quickLinks = [
-    { name: "Renk varyasyonları", href: "#references" },
     { name: "Yaklaşım", href: "#details" },
     { name: "Teknik yapı", href: "#team" },
     { name: "Canlı sahne", href: "#launchlab" },
