@@ -24,7 +24,6 @@ const Navbar = ({ navigationOverlayRef }) => {
     'sahne': 'stackcards',
     'etkileşim': 'services', 
     'yaklaşım': 'details',
-    'teknik': 'team',
     'canlı sahne': 'launchlab'
   }
 
@@ -240,13 +239,6 @@ const Navbar = ({ navigationOverlayRef }) => {
             Yaklaşım
           </button>
           <button
-            className="uppercase font-medium text-xs whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'teknik')}
-            style={{ mixBlendMode: "exclusion" }}
-          >
-            Teknik
-          </button>
-          <button
             ref={contactButtonRef}
             className="relative uppercase font-medium text-xs bg-transparent border border-white text-white px-6 xl:px-8 py-1 whitespace-nowrap cursor-pointer overflow-hidden"
             onClick={(e) => handleNavigation(e, 'canlı sahne')}
@@ -313,18 +305,8 @@ const Navbar = ({ navigationOverlayRef }) => {
               Yaklaşım
             </button>
             <button
-              ref={el => mobileLinksRef.current[3] = el}
-              className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
-              onClick={(e) => {
-                handleNavigation(e, 'teknik')
-                closeMobileMenu()
-              }}
-            >
-              Teknik
-            </button>
-            <button
               ref={el => {
-                mobileLinksRef.current[4] = el
+                mobileLinksRef.current[3] = el
                 mobileContactButtonRef.current = el
               }}
               className="relative uppercase font-medium text-lg bg-transparent border border-white text-white px-8 py-3 mt-4 cursor-pointer overflow-hidden"
