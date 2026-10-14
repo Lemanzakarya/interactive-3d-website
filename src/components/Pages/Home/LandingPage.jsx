@@ -88,7 +88,7 @@ const LandingPage = ({ navigationOverlayRef }) => {
             ref={textRef}
             className="will-change-transform text-center text-[clamp(12px,3.6vw,16px)] font-light max-w-[30ch] sm:max-w-[60ch] mx-auto px-2 text-white/90"
           >
-            Form, hareket ve dijital etkileşimin kesişiminde bir 3D web deneyi.
+            Kaydırdıkça biçim değiştiren, gerçek zamanlı bir 3D web sahnesi.
           </p>
 
           {/* Büyük başlıklar: her kelime blok, mobilde bölünme yok */}
@@ -97,21 +97,21 @@ const LandingPage = ({ navigationOverlayRef }) => {
               <ScrambleText
                 vwText="text-[clamp(22px,8vw,40px)] sm:text-[clamp(28px,3.2vw,64px)] leading-[1.05] tracking-tight"
                 className="block sm:inline whitespace-nowrap drop-shadow md:drop-shadow-none"
-                text="FORM"
+                text="WEB'İN"
               />
             </div>
             <div className="relative" ref={textRef2}>
               <ScrambleText
                 vwText="text-[clamp(22px,8vw,40px)] sm:text-[clamp(28px,3.2vw,64px)] leading-[1.05] tracking-tight"
                 className="block sm:inline whitespace-nowrap drop-shadow md:drop-shadow-none"
-                text="HAREKET"
+                text="ÜÇÜNCÜ"
               />
             </div>
             <div className="relative" ref={textRef3}>
               <ScrambleText
                 vwText="text-[clamp(22px,8vw,40px)] sm:text-[clamp(28px,3.2vw,64px)] leading-[1.05] tracking-tight"
                 className="block sm:inline whitespace-nowrap drop-shadow md:drop-shadow-none"
-                text="DERİNLİK"
+                text="BOYUTU"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ const LandingPage = ({ navigationOverlayRef }) => {
             ref={textRef4}
             className="text-center will-change-transform font-medium text-[clamp(12px,3.6vw,14px)] sm:text-base w-[88%] sm:w-[70%] mx-auto leading-relaxed max-w-[32ch] sm:max-w-[60ch] text-balance text-white/85"
           >
-            Kaydırma hareketiyle dönüşen prosedürel formları, gerçek zamanlı 3D sahneleri ve etkileşimli görsel anlatımı keşfedin. Bu sayfadaki içerik örnek konsept olarak hazırlanmıştır.
+            Kaydırdıkça parçacıklar yön değiştiriyor, geometri dönüşüyor. Bu sayfa, gerçek zamanlı 3D sahnenin içine doğru ilerleyen tek bir deneyim.
           </p>
         </div>
 
@@ -129,7 +129,7 @@ const LandingPage = ({ navigationOverlayRef }) => {
           onClick={(e) => handleNavigation(e, "how we work")}
           className="text-center font-bold [text-shadow:0_0_5px_#60a5fa,0_0_10px_#60a5fa] uppercase flex items-center gap-2 pt-4 text-[11px] sm:text-lg px-3 tracking-wide"
         >
-          3D DENEYİMİ KEŞFEDİN
+          SAHNEYE GİRİN
           <img
             src="/arrowBottomRight.svg"
             alt="arrowDown"
