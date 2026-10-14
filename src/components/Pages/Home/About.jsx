@@ -63,10 +63,10 @@ const About = () => {
           </div>
 
           <h3 className="text-sm font-bold telegraf text-black">
-            AKILLI YAZILIMLAR, SÜRDÜRÜLEBİLİR ÇÖZÜMLER.
+            KAYDIRMA İLE DEĞİŞEN SAHNE.
           </h3>
           <p className="text-sm font-light w-full md:w-[65%] text-black">
-            Gerçek zamanlı parçacıklar ve prosedürel geometriyle oluşturulan bu sayfa, kaydırma hareketini görsel anlatımın bir parçası hâline getirir. Renk, derinlik ve form; kullanıcı etkileşimine göre birlikte dönüşür.
+            Bu çalışma, kaydırmayı yalnızca sayfada ilerlemek için değil, 3D sahneyi yönlendirmek için kullanır. Her geçiş, sahnenin bir sonraki hâlini ortaya çıkarır.
           </p>
         </div>
 
@@ -75,8 +75,7 @@ const About = () => {
             ETKİLEŞİM
           </h3>
           <p className="text-sm font-light w-full md:w-[90%] text-black">
-            İşletmeleri, fikirleri ve insanları bir araya getirerek daha büyük
-            etki yaratmak.
+            ScrollTrigger, sayfa konumunu animasyon zaman çizgisine bağlar. Böylece hareket, kullanıcının ilerleyişiyle eş zamanlı akar.
           </p>
         </div>
 
@@ -85,8 +84,7 @@ const About = () => {
             HAREKET
           </h3>
           <p className="text-sm font-light w-full md:w-[90%] text-black">
-            Güçlü bağlantılar kurmak ve yenilikçi, sürdürülebilir çözümlerle
-            fark yaratmak.
+            Three.js ve React Three Fiber ile üretilen geometri, ışık ve parçacıklar tarayıcıda gerçek zamanlı çizilir.
           </p>
         </div>
       </div>
