@@ -2,6 +2,10 @@
 
 A scroll-driven 3D web experience built with React, Three.js and React Three Fiber. The page combines a real-time 3D scene with motion-led sections to explore how depth, typography and interaction can work together on the web.
 
+## Live demo
+
+[interactive-3d-website-pi.vercel.app](https://interactive-3d-website-pi.vercel.app/)
+
 ## What’s inside
 
 - A 3D scene rendered with Three.js and React Three Fiber
@@ -38,4 +42,4 @@ npm run build
 
 ## Project note
 
-This repository is a portfolio-ready adaptation of an earlier client website. The original 3D implementation and page structure have been retained, while identifying client content and assets have been removed or replaced with neutral concept material.
+This repository presents one interactive 3D web experience. The original scene and scroll-driven page structure are retained; client-specific names, contact details and assets have been removed.
