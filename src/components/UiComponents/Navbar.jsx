@@ -23,7 +23,6 @@ const Navbar = ({ navigationOverlayRef }) => {
   const sectionMap = {
     'sahne': 'stackcards',
     'etkileşim': 'services', 
-    'renkler': 'references',
     'yaklaşım': 'details',
     'teknik': 'team',
     'canlı sahne': 'launchlab'
@@ -229,13 +228,6 @@ const Navbar = ({ navigationOverlayRef }) => {
           >
             Etkileşim
           </button>
-          <button
-            className="hidden lg:inline-block uppercase text-xs font-medium whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'renkler')}
-            style={{ mixBlendMode: "exclusion" }}
-          >
-            Renkler
-          </button>
         </div>
 
         {/* Right Links */}
@@ -314,16 +306,6 @@ const Navbar = ({ navigationOverlayRef }) => {
               ref={el => mobileLinksRef.current[2] = el}
               className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
               onClick={(e) => {
-                handleNavigation(e, 'renkler')
-                closeMobileMenu()
-              }}
-            >
-              Renkler
-            </button>
-            <button
-              ref={el => mobileLinksRef.current[3] = el}
-              className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
-              onClick={(e) => {
                 handleNavigation(e, 'yaklaşım')
                 closeMobileMenu()
               }}
@@ -331,7 +313,7 @@ const Navbar = ({ navigationOverlayRef }) => {
               Yaklaşım
             </button>
             <button
-              ref={el => mobileLinksRef.current[4] = el}
+              ref={el => mobileLinksRef.current[3] = el}
               className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
               onClick={(e) => {
                 handleNavigation(e, 'teknik')
@@ -342,7 +324,7 @@ const Navbar = ({ navigationOverlayRef }) => {
             </button>
             <button
               ref={el => {
-                mobileLinksRef.current[5] = el
+                mobileLinksRef.current[4] = el
                 mobileContactButtonRef.current = el
               }}
               className="relative uppercase font-medium text-lg bg-transparent border border-white text-white px-8 py-3 mt-4 cursor-pointer overflow-hidden"
