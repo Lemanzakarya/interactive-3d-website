@@ -4,12 +4,12 @@ import ScrambleText from "../../UiComponents/ScrambleText";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const quickLinks = [
-    { name: "Görsel Denemeler", href: "#references" },
+    { name: "Renk varyasyonları", href: "#references" },
     { name: "Yaklaşım", href: "#details" },
-    { name: "Kavramsal Modüller", href: "#team" },
+    { name: "Teknik yapı", href: "#team" },
     { name: "3D Sahne", href: "#launchlab" },
   ];
-  const concepts = ["Prosedürel form", "Parçacık hareketi", "Kaydırma animasyonu", "Gerçek zamanlı 3D"];
+  const concepts = ["React Three Fiber", "GSAP ScrollTrigger", "Lenis", "Vite"];
 
   return (
     <footer className="relative z-20 bg-gradient-to-b from-transparent to-black/20 backdrop-blur-sm border-t border-white/10">
@@ -17,13 +17,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <ScrambleText vwText="text-1xl md:text-2xl lg:text-3xl" text="INTERACTIVE 3D EXPERIENCE" />
+              <ScrambleText vwText="text-1xl md:text-2xl lg:text-3xl" text="FORM / FIELD" />
             </div>
             <p className="text-white/70 text-sm leading-relaxed max-w-md mb-6">
-              Kaydırma, gerçek zamanlı geometri ve hareketi bir araya getiren bağımsız bir web deneyimi konsepti.
+              Kaydırma ile yönlendirilen, tarayıcıda çalışan gerçek zamanlı bir 3D web deneyimi.
             </p>
             <p className="text-white/50 text-xs leading-relaxed max-w-md">
-              Sayfadaki isimler ve görseller kurgusal örneklerdir; gerçek kişi, şirket veya müşteri referansı içermez.
+              React, Three.js ve GSAP ile geliştirilmiş tek sayfalık bir WebGL çalışması.
             </p>
           </div>
           <div>
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-white/10">
           <span className="text-white/50 text-sm">© {currentYear} — INTERACTIVE 3D EXPERIENCE</span>
-          <span className="text-white/50 text-xs text-center">KURGUSAL WEBGL KONSEPTİ</span>
+          <span className="text-white/50 text-xs text-center">SCROLL-DRIVEN WEBGL STUDY</span>
         </div>
       </div>
     </footer>
