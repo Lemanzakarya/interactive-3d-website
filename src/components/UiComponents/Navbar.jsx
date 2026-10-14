@@ -21,12 +21,12 @@ const Navbar = ({ navigationOverlayRef }) => {
 
   // Navigation section mapping
   const sectionMap = {
-    'örnekler': 'stackcards',
-    'deneyim': 'services', 
-    'görsel denemeler': 'references',
+    'sahne': 'stackcards',
+    'etkileşim': 'services', 
+    'renkler': 'references',
     'yaklaşım': 'details',
-    'katmanlar': 'team',
-    '3d sahne': 'launchlab'
+    'teknik': 'team',
+    'canlı sahne': 'launchlab'
   }
 
   const handleNavigation = (e, sectionKey) => {
@@ -212,29 +212,29 @@ const Navbar = ({ navigationOverlayRef }) => {
           <div className={`logo-container transition-opacity duration-300 ${!isScrolled ? 'md:opacity-100 opacity-0' : 'opacity-100'}`} style={{ isolation: 'isolate' }}>
             <button type="button" onClick={handleLogoClick} aria-label="Go to top" className="mt-4 flex items-center gap-2 text-white">
               <span className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-300/60 text-sm tracking-widest text-cyan-100">03</span>
-              <span className="text-[9px] leading-tight tracking-[0.18em]">INTERACTIVE<br />3D EXPERIENCE</span>
+              <span className="text-[9px] leading-tight tracking-[0.18em]">FORM /<br />FIELD</span>
             </button>
           </div>
           <button
             className="hidden lg:inline-block uppercase text-xs font-medium whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'örnekler')}
+            onClick={(e) => handleNavigation(e, 'sahne')}
             style={{ mixBlendMode: "exclusion" }}
           >
-            Örnekler
+            Sahne
           </button>
           <button
             className="hidden lg:inline-block uppercase text-xs font-medium whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'deneyim')}
+            onClick={(e) => handleNavigation(e, 'etkileşim')}
             style={{ mixBlendMode: "exclusion" }}
           >
-            Deneyim
+            Etkileşim
           </button>
           <button
             className="hidden lg:inline-block uppercase text-xs font-medium whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'görsel denemeler')}
+            onClick={(e) => handleNavigation(e, 'renkler')}
             style={{ mixBlendMode: "exclusion" }}
           >
-            Görsel Denemeler
+            Renkler
           </button>
         </div>
 
@@ -249,15 +249,15 @@ const Navbar = ({ navigationOverlayRef }) => {
           </button>
           <button
             className="uppercase font-medium text-xs whitespace-nowrap cursor-pointer"
-            onClick={(e) => handleNavigation(e, 'katmanlar')}
+            onClick={(e) => handleNavigation(e, 'teknik')}
             style={{ mixBlendMode: "exclusion" }}
           >
-            Katmanlar
+            Teknik
           </button>
           <button
             ref={contactButtonRef}
             className="relative uppercase font-medium text-xs bg-transparent border border-white text-white px-6 xl:px-8 py-1 whitespace-nowrap cursor-pointer overflow-hidden"
-            onClick={(e) => handleNavigation(e, '3d sahne')}
+            onClick={(e) => handleNavigation(e, 'canlı sahne')}
             onMouseEnter={() => handleContactButtonHover(true, contactButtonFillRef)}
             onMouseLeave={() => handleContactButtonHover(false, contactButtonFillRef)}
             style={{ mixBlendMode: "exclusion" }}
@@ -267,7 +267,7 @@ const Navbar = ({ navigationOverlayRef }) => {
               className="absolute inset-0 bg-white origin-left"
               style={{ transform: "scaleX(0)" }}
             ></div>
-            <span className="relative z-10 mix-blend-difference">3D Sahne</span>
+            <span className="relative z-10 mix-blend-difference">Canlı Sahne</span>
           </button>
         </div>
 
@@ -294,31 +294,31 @@ const Navbar = ({ navigationOverlayRef }) => {
               ref={el => mobileLinksRef.current[0] = el}
               className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
               onClick={(e) => {
-                handleNavigation(e, 'örnekler')
+                handleNavigation(e, 'sahne')
                 closeMobileMenu()
               }}
             >
-              Örnekler
+              Sahne
             </button>
             <button
               ref={el => mobileLinksRef.current[1] = el}
               className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
               onClick={(e) => {
-                handleNavigation(e, 'deneyim')
+                handleNavigation(e, 'etkileşim')
                 closeMobileMenu()
               }}
             >
-              Deneyim
+              Etkileşim
             </button>
             <button
               ref={el => mobileLinksRef.current[2] = el}
               className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
               onClick={(e) => {
-                handleNavigation(e, 'görsel denemeler')
+                handleNavigation(e, 'renkler')
                 closeMobileMenu()
               }}
             >
-              Görsel Denemeler
+              Renkler
             </button>
             <button
               ref={el => mobileLinksRef.current[3] = el}
@@ -334,11 +334,11 @@ const Navbar = ({ navigationOverlayRef }) => {
               ref={el => mobileLinksRef.current[4] = el}
               className="uppercase text-lg font-medium text-white hover:text-gray-300 transition-colors cursor-pointer"
               onClick={(e) => {
-                handleNavigation(e, 'katmanlar')
+                handleNavigation(e, 'teknik')
                 closeMobileMenu()
               }}
             >
-              Katmanlar
+              Teknik
             </button>
             <button
               ref={el => {
@@ -347,7 +347,7 @@ const Navbar = ({ navigationOverlayRef }) => {
               }}
               className="relative uppercase font-medium text-lg bg-transparent border border-white text-white px-8 py-3 mt-4 cursor-pointer overflow-hidden"
               onClick={(e) => {
-                handleNavigation(e, '3d sahne')
+                handleNavigation(e, 'canlı sahne')
                 closeMobileMenu()
               }}
               onMouseEnter={() => handleContactButtonHover(true, mobileContactButtonFillRef)}
@@ -358,7 +358,7 @@ const Navbar = ({ navigationOverlayRef }) => {
                 className="absolute inset-0 bg-white origin-left"
                 style={{ transform: "scaleX(0)" }}
               ></div>
-              <span className="relative z-10 mix-blend-difference">3D Sahne</span>
+              <span className="relative z-10 mix-blend-difference">Canlı Sahne</span>
             </button>
           </div>
         </div>
