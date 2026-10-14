@@ -13,7 +13,7 @@ const palettes = [
 const makeStudy = (index) => {
   const [start, end] = palettes[index % palettes.length];
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${start}"/><stop offset="1" stop-color="${end}"/></linearGradient><filter id="b"><feGaussianBlur stdDeviation="26"/></filter></defs><rect width="600" height="600" fill="#090b12"/><circle cx="300" cy="300" r="205" fill="url(#g)" opacity=".22" filter="url(#b)"/><ellipse cx="300" cy="300" rx="205" ry="78" fill="none" stroke="url(#g)" stroke-width="3" transform="rotate(-32 300 300)"/><ellipse cx="300" cy="300" rx="150" ry="64" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2" transform="rotate(38 300 300)"/><circle cx="300" cy="300" r="46" fill="url(#g)"/><text x="300" y="530" fill="#ffffff" fill-opacity=".7" text-anchor="middle" font-family="sans-serif" font-size="20" letter-spacing="6">STUDY ${String(index + 1).padStart(2, "0")}</text></svg>`;
-  return { src: `data:image/svg+xml,${encodeURIComponent(svg)}`, alt: `Abstract 3D study ${String(index + 1).padStart(2, "0")}` };
+  return { src: `data:image/svg+xml,${encodeURIComponent(svg)}`, alt: `Renk varyasyonu ${String(index + 1).padStart(2, "0")}` };
 };
 
 const images = palettes.map((_, index) => makeStudy(index));
