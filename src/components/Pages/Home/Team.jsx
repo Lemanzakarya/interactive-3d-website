@@ -1,51 +1,30 @@
-import React from "react";
 import ScrambleText from "../../UiComponents/ScrambleText";
-import ProfileCard from "../../UiComponents/Profile/ProfileCard";
 
-const moduleNames = [
-  ["FORM", "Procedural geometry"], ["MOTION", "Scroll animation"], ["DEPTH", "Particle systems"],
-  ["COLOR", "Real-time shading"], ["SPACE", "3D composition"], ["INPUT", "User interaction"],
+const implementation = [
+  { number: "01", title: "Three.js + R3F", description: "Gerçek zamanlı 3D sahne ve geometri tarayıcıda çizilir." },
+  { number: "02", title: "GSAP ScrollTrigger", description: "Kaydırma konumu, sahne geçişlerini ve animasyon zaman çizgisini kontrol eder." },
+  { number: "03", title: "Lenis", description: "Sayfa kaydırmasına yumuşak ve tutarlı bir akış kazandırır." },
+  { number: "04", title: "React + Vite", description: "Arayüz bileşenlerini ve geliştirme sürecini bir arada tutar." },
 ];
 
-const createAvatar = (label, index) => {
-  const hue = (index * 49 + 190) % 360;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(${hue} 90% 58%)"/><stop offset="1" stop-color="hsl(${(hue + 95) % 360} 85% 32%)"/></linearGradient></defs><rect width="400" height="500" fill="#090b12"/><circle cx="200" cy="220" r="135" fill="url(#g)" opacity=".85"/><circle cx="200" cy="220" r="92" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="2"/><ellipse cx="200" cy="220" rx="152" ry="56" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" transform="rotate(-32 200 220)"/><text x="200" y="435" fill="#fff" text-anchor="middle" font-family="sans-serif" font-size="22" letter-spacing="5">${label}</text></svg>`;
-  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
-};
-
-const modules = moduleNames.map(([name, title], index) => ({
-  name,
-  title,
-  handle: `module-${String(index + 1).padStart(2, "0")}`,
-  avatar: createAvatar(name, index),
-}));
-
 const Team = () => (
-  <section className="w-full py-28 relative z-0 isolate">
-    <div className="container mx-auto px-6 max-w-6xl">
-      <div className="mb-12 justify-center text-center">
-        <div className="relative text-center w-full referance-title">
-          <ScrambleText textSize="5xl" text="DENEYİMİN KATMANLARI" />
+  <section id="team" className="relative z-0 isolate w-full py-28">
+    <div className="container mx-auto max-w-6xl px-6">
+      <div className="mb-12 text-center">
+        <div className="referance-title relative w-full text-center">
+          <ScrambleText textSize="5xl" text="TEKNİK NOTLAR" />
         </div>
-        <p className="mt-8 text-sm md:text-base text-white/70 leading-relaxed">
-          Bu kartlar gerçek kişi profilleri değil; 3D web deneyiminin parçacık, hareket ve geometri gibi kurgusal bileşenlerini gösterir.
+        <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-white/70 md:text-base">
+          Bu çalışma, gerçek zamanlı 3D sahneyi kaydırma ile yönlendirilen bir arayüzün içine yerleştirir.
         </p>
       </div>
-      <div className="grid gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {modules.map((module) => (
-          <ProfileCard
-            key={module.handle}
-            name={module.name}
-            title={module.title}
-            handle={module.handle}
-            status="CONCEPT"
-            contactText=""
-            avatarUrl={module.avatar}
-            miniAvatarUrl={module.avatar}
-            showUserInfo={false}
-            enableTilt
-            enableMobileTilt={false}
-          />
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {implementation.map((item) => (
+          <article key={item.number} className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-md">
+            <p className="mb-8 text-xs tracking-[0.2em] text-cyan-200/70">{item.number}</p>
+            <h3 className="mb-3 text-lg font-semibold text-white">{item.title}</h3>
+            <p className="text-sm leading-relaxed text-white/65">{item.description}</p>
+          </article>
         ))}
       </div>
     </div>
