@@ -24,10 +24,10 @@ const LaunchLab = () => {
 
   // 4 içerik (About ayrı; burada sadece 4 segment var)
   const modelContent = [
-    { title: "FORM / GEOMETRİ", description: "Prosedürel biçimler, parçacıklar ve ışık aynı sahnede buluşur." },
-    { title: "HAREKET", description: "Kaydırma ilerledikçe 3D yapı yeni bir düzene dönüşür." },
-    { title: "DERİNLİK", description: "Katmanlı parçacıklar sahneye hacim ve yön duygusu kazandırır." },
-    { title: "ETKİLEŞİM", description: "Bu bölüm, kullanıcı hareketi ile gerçek zamanlı görsel tepkiyi araştırır." },
+    { title: "GEOMETRİ", description: "Temel 3D biçimler, kaydırma boyunca sahnede yer değiştirir." },
+    { title: "DÖNÜŞÜM", description: "Animasyonlar, sayfanın ilerleyişiyle eş zamanlı olarak çalışır." },
+    { title: "PARÇACIKLAR", description: "Parçacık katmanları sahneye hacim ve hareket katar." },
+    { title: "ETKİLEŞİM", description: "Kaydırma, 3D sahnenin geçişlerini ve animasyon ritmini kontrol eder." },
   ];
 
   useEffect(() => {
@@ -253,11 +253,11 @@ const LaunchLab = () => {
                            text-black/70 [text-shadow:0_0_6px_rgba(0,0,0,.08)]"
                 style={{ pointerEvents: "auto" }}
               >
-                AŞAĞI KAYDIRARAK DENEYİMLE
+                KAYDIRDIKÇA SAHNE DEĞİŞİR
               </p>
 
               {/* Decorative spacer preserves the original scroll composition. */}
-              <div className="pointer-events-none h-8 text-[10px] tracking-[0.3em] text-black/45">SCROLL ↓</div>
+              <div className="pointer-events-none h-8 text-[10px] tracking-[0.3em] text-black/45">AŞAĞI ↓</div>
 
               {/* Başlık + açıklama */}
               <div
