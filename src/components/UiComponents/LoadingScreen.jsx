@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const LoadingScreen = ({ onLoadingComplete, onLoad, minimumLoadingTime = 2000 }) => {
   const [progress, setProgress] = useState(0);
-  const [loadingText, setLoadingText] = useState('Markalar Yaratıyor, Kültür İnşa Ediyoruz');
+  const [loadingText, setLoadingText] = useState('3D deneyim hazırlanıyor...');
   const [isComplete, setIsComplete] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false);
   const [loadingStartTime] = useState(Date.now());
@@ -38,10 +38,9 @@ const LoadingScreen = ({ onLoadingComplete, onLoad, minimumLoadingTime = 2000 })
       setLoadingText(prev => {
         if (prev === 'Tamamlandı!') return prev;
         const texts = [
-          'Dosyalar yükleniyor...',
           'Sahne hazırlanıyor...',
-          'Dokular oluşturuluyor...',
-          'Ortam ayarlanıyor...',
+          'Biçimler yerini buluyor...',
+          'Işıklar ayarlanıyor...',
           'Neredeyse hazır...'
         ];
         const currentIndex = texts.indexOf(prev);
