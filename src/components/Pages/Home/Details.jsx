@@ -74,7 +74,7 @@ useGSAP(() => {
               <ScrambleText
                 vwText="lg:text-[3.7vw] text-[7vw]"
                 className="inline"
-                text="HAYAL EDİN"
+                text="KAYDIRDIKÇA"
               />
             </div>
 
@@ -82,7 +82,7 @@ useGSAP(() => {
               <ScrambleText
                 vwText="lg:text-[3.7vw] text-[7vw]"
                 className="block"
-                text="GERÇEĞE DÖNÜŞTÜRELİM"
+                text="SAHNE DEĞİŞİR"
               />
             </div>
           </div>
@@ -95,12 +95,12 @@ useGSAP(() => {
             className="animate-me text-[2.7vw] lg:text-base"
             aria-hidden="true"
           >
-            Kaydırma ile tepki veren parçacıklar, gerçek zamanlı geometri ve katmanlı animasyonlar tek bir etkileşimli sahnede buluşur. Her bölüm, formun hareketle nasıl değişebileceğini gösteren kurgusal bir görsel çalışmadır.
+            Kaydırma konumu animasyon zaman çizgisine bağlanır. İlerledikçe parçacıklar, ışık ve geometri aynı sahnede dönüşür.
           </p>
 
           {/* Erişilebilirlik için görünmeyen kopya */}
           <p className="sr-only text-[2.7vw] lg:text-base">
-            Kaydırma ile tepki veren parçacıklar, gerçek zamanlı geometri ve katmanlı animasyonlar tek bir etkileşimli sahnede buluşur. Her bölüm, formun hareketle nasıl değişebileceğini gösteren kurgusal bir görsel çalışmadır.
+            Kaydırma konumu animasyon zaman çizgisine bağlanır. İlerledikçe parçacıklar, ışık ve geometri aynı sahnede dönüşür.
           </p>
         </div>
       </div>
