@@ -65,12 +65,12 @@ const StackCards = () => {
     <div ref={container} className="relative z-20 mt-[40vh] sm:mt-[55vh] min-h-[140vh]">
       <div className="h-screen sticky lg:top-0 top-14 w-full flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between px-4 sm:px-8 md:px-16 lg:px-32">
   <p className="text-[3.5vw] sm:text-sm w-full lg:w-[25%] content max-w-sm lg:max-w-none lg:order-2 order-2 mb-6 lg:mb-0 z-30">
-         Kaydırma ile açılan bu kartlar, 3D deneyim tasarımına ait kurgusal görsel denemeleri gösterir. Her örnek form, renk ve hareket ilişkisini araştırır.
+         Bu kartlar ayrı projeler değil; aşağıdaki 3D sahnenin geometri, parçacık ve hareket gibi farklı bileşenlerini gösterir.
         </p>
   <div className="w-[90%] lg:w-[35%] [text-shadow:0_0_5px_#60a5fa,0_0_10px_#60a5fa] relative content lg:order-1 order-1">
           <ScrambleText 
             vwText="text-[6vw] sm:text-[4.5vw] lg:text-[2.5vw]" 
-            text="ETKİLEŞİMLİ FORM ÇALIŞMALARI"
+            text="3D SAHNENİN BİLEŞENLERİ"
           />
         </div>
       </div>
