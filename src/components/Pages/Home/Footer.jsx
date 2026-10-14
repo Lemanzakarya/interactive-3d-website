@@ -5,6 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const quickLinks = [
     { name: "Yaklaşım", href: "#details" },
+    { name: "Deneyimi keşfet", href: "#services" },
     { name: "Canlı sahne", href: "#launchlab" },
   ];
 
@@ -17,10 +18,7 @@ const Footer = () => {
               <ScrambleText vwText="text-1xl md:text-2xl lg:text-3xl" text="FORM / FIELD" />
             </div>
             <p className="text-white/70 text-sm leading-relaxed max-w-md mb-6">
-              Kaydırma ile yönlendirilen, tarayıcıda çalışan gerçek zamanlı bir 3D web deneyimi.
-            </p>
-            <p className="text-white/50 text-xs leading-relaxed max-w-md">
-              React, Three.js ve GSAP ile geliştirilmiş tek sayfalık bir WebGL çalışması.
+              Kaydırdıkça dönüşen, tek parça bir 3D web deneyimi.
             </p>
           </div>
           <div>
