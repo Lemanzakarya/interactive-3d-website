@@ -21,7 +21,7 @@ const modules = moduleNames.map(([name, title], index) => ({
 }));
 
 const Team = () => (
-  <section className="w-full py-28 relative z-0 isolate" id="team">
+  <section className="w-full py-28 relative z-0 isolate">
     <div className="container mx-auto px-6 max-w-6xl">
       <div className="mb-12 justify-center text-center">
         <div className="relative text-center w-full referance-title">
