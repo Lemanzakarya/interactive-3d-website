@@ -1,8 +1,8 @@
-# Interactive 3D Website
+# Interactive 3D Experience
 
-A scroll-led web experience exploring procedural 3D form, light, and motion in the browser.
+A scroll-led 3D web experiment built with React, Three.js, React Three Fiber, GSAP and Vite. The project explores procedural form, motion, depth and interaction.
 
-Every visual in the scene is generated from code. The page contains fictional concept copy and no real company, client, project, team, contact, or social information.
+All visible names and examples are fictional concept content. The project contains no client references, personal profiles, company contact details, or third-party brand assets.
 
 ## Run locally
 
@@ -13,10 +13,9 @@ npm run dev
 
 Create a production build with `npm run build`.
 
-## Built with
+## Stack
 
-- React and Vite
-- Three.js and React Three Fiber
-- CSS
-
-The 3D scene uses procedural geometry; no photos, logos, font files, or downloaded models are required.
+- React
+- Three.js / React Three Fiber
+- GSAP ScrollTrigger
+- Vite
