@@ -26,11 +26,11 @@ const Referance = () => (
           <ScrambleText
             vwText="text-[clamp(16px,6vw,36px)] sm:text-[clamp(20px,4vw,44px)] leading-tight"
             className="mx-auto"
-            text="Görsel Araştırmalar"
+            text="AYNI FORM, FARKLI RENKLER"
           />
         </div>
         <p className="mt-4 text-sm md:text-base text-white/70 leading-relaxed">
-          Form, renk ve derinlik üzerine hazırlanmış kurgusal görsel denemeler.
+          Tek bir soyut kompozisyon, farklı renk paletleriyle yeniden yorumlanır. Görseller SVG olarak sayfa içinde üretilir.
         </p>
       </div>
       <ResponsiveGallery images={images} />
