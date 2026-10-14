@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-white/10">
           <span className="text-white/50 text-sm">© {currentYear} — FORM / FIELD</span>
-          <span className="text-white/50 text-xs text-center">SCROLL-DRIVEN WEBGL STUDY</span>
+          <span className="text-white/50 text-xs text-center">KAYDIRDIKÇA DEĞİŞEN 3D DENEYİM</span>
         </div>
       </div>
     </footer>
