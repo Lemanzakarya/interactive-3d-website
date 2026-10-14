@@ -95,7 +95,7 @@ useGSAP(() => {
             className="animate-me text-[2.7vw] lg:text-base"
             aria-hidden="true"
           >
-            Kaydırma konumu animasyon zaman çizgisine bağlanır. İlerledikçe parçacıklar, ışık ve geometri aynı sahnede dönüşür.
+            Aşağı doğru ilerledikçe parçacıklar yön değiştirir, ışık kayar ve sahne yeni bir biçime bürünür.
           </p>
 
           {/* Erişilebilirlik için görünmeyen kopya */}
